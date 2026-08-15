@@ -43,9 +43,3 @@ Each device license file inside `/licenses/` is named using the target device's 
 ---
 
 *Note: This repository contains public configuration data only. No sensitive application source code or personal data is stored here.*
-
-```
-
-<FollowUp label="Want to know how to calculate Unix epoch timestamps easily for setting custom expiration dates?" query="How do I quickly generate Unix epoch timestamps in milliseconds for testing different expiration dates?"/>
-
-```

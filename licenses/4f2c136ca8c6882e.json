@@ -1,6 +1,6 @@
 {
   "device_id": "4f2c136ca8c6882e",
-  "enabled": false,
-  "expires_at_epoch": 1786973045,
+  "enabled": true,
+  "expires_at_epoch": 1786975101,
   "notes": "Amit initial testing"
 }

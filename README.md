@@ -37,11 +37,18 @@ Each device license file inside `/licenses/` is named using the target device's 
 | --- | --- | --- |
 | `device_id` | String | Unique hardware `ANDROID_ID` of the user's device. |
 | `enabled` | Boolean | Remote kill-switch flag (`true` allows access, `false` revokes access). |
-| `expires_at_epoch` | Long | Expiration timestamp in milliseconds since Unix epoch (UTC). |
+| `expires_at_epoch` | Long | Expiration timestamp in seconds since Unix epoch (UTC). |
 | `notes` | String | Optional metadata for tracking ownership or release group. |
 
 ### ⏱️ Quick Commands for epoch (13-Digit Format)
+### ⏱️ Generate 10-Digit Epoch Timestamps (Seconds)
 
-1 Day From Now:  echo $(($(date -d "+1 day" +%s%N) / 1000000))
+* **1 Day From Now:**
+  ```bash
+  date -d "+1 day" +%s
+  ```
 
-5 Minutes From Now: echo $(($(date -d "+5 minutes" +%s%N) / 1000000))
+* **5 Minutes From Now:**
+  ```bash
+  date -d "+5 minutes" +%s
+  ```

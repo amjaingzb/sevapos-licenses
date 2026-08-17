@@ -40,6 +40,8 @@ Each device license file inside `/licenses/` is named using the target device's 
 | `expires_at_epoch` | Long | Expiration timestamp in milliseconds since Unix epoch (UTC). |
 | `notes` | String | Optional metadata for tracking ownership or release group. |
 
----
+### ⏱️ Quick Commands for epoch (13-Digit Format)
 
-*Note: This repository contains public configuration data only. No sensitive application source code or personal data is stored here.*
+1 Day From Now:  echo $(($(date -d "+1 day" +%s%N) / 1000000))
+
+5 Minutes From Now: echo $(($(date -d "+5 minutes" +%s%N) / 1000000))
